@@ -41,6 +41,11 @@ test("IP Address", t => {
   t.deepEqual(encodeBytesAsWords(bytes), ["intercourse", "processors", "cv"]);
 });
 
+test("Public IP Address", t => {
+  const bytes = new Uint8Array([142, 150, 42, 3]);
+  t.deepEqual(encodeBytesAsWords(bytes), ["liberals", "tesco", "cv"]);
+});
+
 test("IP Address + port + secret (example 1)", t => {
   const port = 52;
   const secret1 = 123;
@@ -75,3 +80,10 @@ test("Emoji dictionary", t => {
   t.deepEqual(encodeBytesAsWords(bytes, 4, emojis), ['👴🏽', '🕢', '👶']);
 });
 
+test("Readme examples", t => {
+  // const randomBytes = [151, 124, 56, 132, 252, 1, 98]
+  // console.log(randomBytes.map(x => x.toString(2)).join(""));
+  // console.log(encodeBytesAsWords(new Uint8Array(randomBytes)));
+
+  t.pass();
+})
