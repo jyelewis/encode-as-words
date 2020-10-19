@@ -9,9 +9,19 @@ e.g.
 Example use case, displaying a users public IP for them to read out over the phone during support calls
 `142.150.42.3` -> `liberals tesco cv`
 
+Installation
+----
+```
+npm install encode-as-words
+```
+or
+```
+yarn add encode-as-words
+```
 
 Usage
 ----
+This package supports both browser environments & node js.
 ``` javascript 1.8
 import {encodeBytesAsWords, decodeBytesFromWords} from "encode-as-words";
 
@@ -23,3 +33,7 @@ console.log(words.join(" ")); // liberals tesco cv
 const decodedBytes = decodeBytesFromWords(words, 4);
 console.log(decodedBytes); // 142, 150, 42, 3
 ```
+
+Security note
+----
+This is *not* a form of encryption. Do not store sensitive data using this package.
