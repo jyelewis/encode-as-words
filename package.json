@@ -1,12 +1,13 @@
 {
   "name": "encode-as-words",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Encode bytes as a human readable string of english words",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc -b",
-    "test": "ava"
+    "test": "ava",
+    "prepublish": "tsc -b"
   },
   "repository": {
     "type": "git",
