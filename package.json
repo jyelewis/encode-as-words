@@ -1,0 +1,40 @@
+{
+  "name": "encode-as-words",
+  "version": "1.0.0",
+  "description": "Encode bytes as a human readable string of english words",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jyelewis/encode-as-words.git"
+  },
+  "keywords": [
+    "bytes",
+    "dictionary",
+    "key"
+  ],
+  "author": "Jye Lewis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jyelewis/encode-as-words/issues"
+  },
+  "homepage": "https://github.com/jyelewis/encode-as-words#readme",
+  "devDependencies": {
+    "ava": "^3.13.0",
+    "emojis-list": "^3.0.0",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  },
+  "ava": {
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  }
+}

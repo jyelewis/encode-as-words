@@ -1,0 +1,5 @@
+src/
+node_modules/
+dist/tsconfig.tsbuildinfo
+tests/
+tsconfig.json
